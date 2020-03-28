@@ -19,7 +19,7 @@ public class DishController {
     private final DishService dishService;
 
     @GetMapping("/")
-    public List<Dish> getAllUsers() {
+    public List<Dish> getAllDishes() {
         return dishService.getDishList();
     }
 }

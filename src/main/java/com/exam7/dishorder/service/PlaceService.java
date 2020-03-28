@@ -1,6 +1,7 @@
 package com.exam7.dishorder.service;
 
 
+import com.exam7.dishorder.dto.PlaceDTO;
 import com.exam7.dishorder.model.Place;
 import com.exam7.dishorder.repository.PlaceRepo;
 import org.springframework.data.domain.Pageable;
@@ -18,13 +19,7 @@ public class PlaceService {
         this.placeRepo = placeRepo;
     }
 
-  /*  public List<PlaceDTO> findPlaces(Pageable pageable) {
-        return placeRepo.findAll((java.awt.print.Pageable) pageable)
-                .stream()
-                .map(PlaceDTO::from)
-                .collect(Collectors.toList());
-    }*/
-    public List<Place> getPlaceList() {
+       public List<Place> getPlaceList() {
         List<Place> result = new ArrayList<>();
         placeRepo.findAll().forEach(result::add);
         return result;
