@@ -12,8 +12,8 @@ import java.util.UUID;
 @Document("orders")
 @Data
 @Builder
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-@NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC, force = true)
 public class Order {
 
     @Id

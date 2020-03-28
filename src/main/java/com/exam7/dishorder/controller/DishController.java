@@ -1,6 +1,7 @@
 package com.exam7.dishorder.controller;
 
 
+import com.exam7.dishorder.model.Dish;
 import com.exam7.dishorder.service.DishService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Pageable;
@@ -17,5 +18,8 @@ public class DishController {
 
     private final DishService dishService;
 
-
+    @GetMapping("/")
+    public List<Dish> getAllUsers() {
+        return dishService.getDishList();
+    }
 }

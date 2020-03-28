@@ -9,8 +9,8 @@ import java.util.UUID;
 @Document("dishes")
 @Data
 @Builder
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-@NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC, force = true)
 public class Dish {
 
     @Id
