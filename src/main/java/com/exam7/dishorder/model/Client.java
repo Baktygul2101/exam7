@@ -5,7 +5,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-import java.util.Collection;
 import java.util.UUID;
 
 @Document("clients")
@@ -13,7 +12,7 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
-public class Client  {
+public class Client {
     @Id
     @Builder.Default
     private String id = UUID.randomUUID().toString();

@@ -1,7 +1,7 @@
 package com.exam7.dishorder.controller;
 
-import com.exam.foodorder.service.DishService;
 
+import com.exam7.dishorder.service.DishService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.MediaType;

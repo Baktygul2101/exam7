@@ -1,8 +1,9 @@
-package com.exam.foodorder.service;
+package com.exam7.dishorder.service;
 
 
 
-import com.exam.foodorder.repository.OrderRepo;
+
+import com.exam7.dishorder.repository.OrderRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
